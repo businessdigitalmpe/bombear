@@ -391,7 +391,7 @@
     $("#conteudo").innerHTML =
       '<section class="topo-pagina"><div class="container">' +
         '<p class="rotulo">' + esc(p.eyebrow) + "</p>" +
-        '<h1 class="titulo-g" style="max-width:16ch">' + esc(p.titulo) + "</h1>" +
+        '<h1 class="titulo-m" style="max-width:24ch">' + esc(p.titulo) + "</h1>" +
         '<p class="lead" style="margin-top:24px;max-width:58ch">' + esc(p.intro) + "</p>" +
       "</div></section>" +
       historia + fotos +
