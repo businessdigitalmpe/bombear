@@ -392,7 +392,7 @@
       '<section class="topo-pagina"><div class="container">' +
         '<p class="rotulo">' + esc(p.eyebrow) + "</p>" +
         '<h1 class="titulo-m" style="max-width:24ch">' + esc(p.titulo) + "</h1>" +
-        '<p class="lead" style="margin-top:24px;max-width:58ch">' + esc(p.intro) + "</p>" +
+        (p.intro ? '<p class="lead" style="margin-top:24px;max-width:58ch">' + esc(p.intro) + "</p>" : "") +
       "</div></section>" +
       historia + fotos +
       '<section class="secao" style="background:var(--fundo-suave)"><div class="container">' +

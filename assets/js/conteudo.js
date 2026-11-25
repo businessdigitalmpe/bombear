@@ -256,7 +256,7 @@ window.BOMBEAR = {
   paginaQuemSomos: {
     eyebrow: "Nossas raízes, nosso futuro",
     titulo: "A Bombear é a materialização de um sonho compartilhado, construído com dedicação, coragem e a vontade constante de fazer melhor.",
-    intro: "A Bombear nasce no Eusébio com a experiência e a tradição da Pé de Serra Irrigação. Trazemos fornecedores reconhecidos, processos consolidados e a essência do nosso atendimento: entender a necessidade de cada cliente antes de oferecer a solução certa.",
+    intro: "",
     /* Imagem mostrada ao lado da nossa história enquanto a loja não está pronta */
     imagemHistoria: { src: "assets/img/simbolo-cor.svg", alt: "Símbolo da Bombear" },
     historia: {
