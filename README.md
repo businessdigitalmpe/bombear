@@ -8,7 +8,7 @@ Site institucional em HTML, CSS e JavaScript puro. Não tem build, framework nem
 bombear/  (raiz do repositório)
 ├── index.html            Página inicial (topo, categorias, quem somos, marcas, contato)
 ├── produtos.html         Tipos de produto por categoria (produtos.html#bombas, #piscina…)
-├── quem-somos.html       Nossas raízes, nosso futuro (história e pilares)
+├── quem-somos.html       Por trás da Bombear (história e pilares)
 ├── condominios.html      Página para síndicos e administradoras
 ├── README.md             Este guia
 └── assets/

@@ -78,7 +78,7 @@ window.BOMBEAR = {
   /* ---------- SEO POR PÁGINA ---------- */
   seo: {
     inicio:      { titulo: "Bombear · Bombas, irrigação e piscina no Eusébio-CE", descricao: "Loja de bombas, irrigação, piscina e jardinagem no Eusébio-CE. Diagnóstico antes da venda e atendimento pelo WhatsApp." },
-    quemSomos:   { titulo: "Nossas raízes, nosso futuro · Bombear", descricao: "A Bombear nasceu da Pé de Serra Irrigação. Conheça nosso jeito de atender no Eusébio-CE." },
+    quemSomos:   { titulo: "Por trás da Bombear", descricao: "A Bombear nasceu da Pé de Serra Irrigação. Conheça nosso jeito de atender no Eusébio-CE." },
     produtos:    { titulo: "Produtos · Bombear", descricao: "Tipos de bomba, irrigação, piscina, tubos e elétricos: o que cada um faz e onde se aplica. Bombear, Eusébio-CE." },
     condominios: { titulo: "Condomínios · Bombear", descricao: "Bombas de recalque, piscina, irrigação e elétrica de bombas para condomínios do Eusébio e região, com nota fiscal e cotação rápida." },
     imagemCompartilhamento: "assets/img/[og-imagem].jpg"
@@ -87,7 +87,7 @@ window.BOMBEAR = {
   /* ---------- MENU ---------- */
   menu: [
     { rotulo: "Produtos", href: "produtos.html", pagina: "produtos", dropdown: true },
-    { rotulo: "Nossas raízes, nosso futuro", href: "quem-somos.html", pagina: "quemSomos" },
+    { rotulo: "Por trás da Bombear", href: "quem-somos.html", pagina: "quemSomos" },
     { rotulo: "Marcas", href: "index.html#marcas" },
     { rotulo: "Contato", href: "index.html#contato" }
   ],
@@ -218,7 +218,7 @@ window.BOMBEAR = {
 
   /* ---------- HOME: QUEM SOMOS (resumo) ---------- */
   quemSomosResumo: {
-    eyebrow: "Nossas raízes, nosso futuro",
+    eyebrow: "Por trás da Bombear",
     titulo: "Gente que entende de água",
     paragrafo: "A Bombear nasceu da Pé de Serra Irrigação, que há 3 anos dimensiona bombas e sistemas de irrigação no Ceará. No Eusébio, trouxemos o mesmo jeito de trabalhar: entender o problema antes de indicar o produto.",
     itens: [
@@ -254,7 +254,7 @@ window.BOMBEAR = {
 
   /* ---------- PÁGINA QUEM SOMOS ---------- */
   paginaQuemSomos: {
-    eyebrow: "Nossas raízes, nosso futuro",
+    eyebrow: "Por trás da Bombear",
     titulo: "A Bombear é a materialização de um sonho compartilhado, construído com dedicação, coragem e a vontade constante de fazer melhor.",
     intro: "",
     /* Imagem mostrada ao lado da nossa história enquanto a loja não está pronta */
