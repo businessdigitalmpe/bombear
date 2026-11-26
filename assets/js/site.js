@@ -490,6 +490,10 @@
   if (pagina === "condominios") renderCondominios();
   if (pagina === "produtos") renderProdutos();
   renderRodape();
+  /* Botão flutuante de WhatsApp, em todas as páginas */
+  document.body.insertAdjacentHTML("beforeend",
+    '<a class="whats-flutuante" href="' + linkWhats() + '" target="_blank" rel="noopener" aria-label="Falar com a Bombear no WhatsApp">' +
+    '<img src="' + esc(D.empresa.iconeWhatsapp || "assets/img/whatsapp.png") + '" alt="" width="60" height="60"></a>');
   ligarHeader();
   ligarHero();
   if (pagina === "inicio") ligarCategorias();
