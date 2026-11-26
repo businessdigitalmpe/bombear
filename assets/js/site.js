@@ -30,8 +30,8 @@
     return '<svg class="' + (classe || "icone") + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="' + (sw || 2) + '" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + corpo + "</svg>";
   }
   var ICONES = {
-    whats: svg('<path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.3-5.2A8.5 8.5 0 1 1 21 11.5z"/>'),
-    chat: svg('<path d="M4 5h16v11H8l-4 4z"/>'),
+    whats: '<img class="icone icone--whats" src="' + (window.BOMBEAR.empresa.iconeWhatsapp || "assets/img/whatsapp.png") + '" alt="" aria-hidden="true">',
+    chat: '<img class="icone icone--whats" src="' + (window.BOMBEAR.empresa.iconeWhatsapp || "assets/img/whatsapp.png") + '" alt="" aria-hidden="true">',
     seta: svg('<path d="M5 12h14M13 6l6 6-6 6"/>', "icone seta", 2.2),
     diag: svg('<path d="M7 17 17 7M8 7h9v9"/>', "icone seta", 2.2),
     check: svg('<path d="M20 6 9 17l-5-5"/>', "icone", 2.5),

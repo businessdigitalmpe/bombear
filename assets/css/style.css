@@ -338,3 +338,7 @@ button { font: inherit; color: inherit; }
 .whats-flutuante:hover { transform: scale(1.08); }
 .whats-flutuante:focus-visible { outline: 3px solid var(--azul); outline-offset: 4px; }
 @media (max-width: 600px) { .whats-flutuante { width: 54px; height: 54px; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); } }
+
+/* Logo do WhatsApp dentro dos botões e do rodapé */
+.icone--whats { width: 22px; height: 22px; object-fit: contain; }
+.sociais .icone--whats { width: 24px; height: 24px; }
