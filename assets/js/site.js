@@ -273,9 +273,21 @@
       return '<li><span class="conexao" aria-hidden="true">' + (i + 1) + '</span><h3 class="titulo-p">' + esc(it.titulo) + "</h3><p>" + esc(it.texto) + "</p></li>";
     }).join("");
 
-    var marcas = D.marcas.lista.map(function (m) {
-      return '<li class="marca">' + (m.logo ? '<img src="' + esc(m.logo) + '" alt="' + esc(m.nome) + '" loading="lazy">' : esc(m.nome)) + "</li>";
-    }).join("");
+    function cartaoMarca(m, copia) {
+      return '<li class="marca"' + (copia ? ' aria-hidden="true"' : "") + ">" +
+        (m.logo ? '<img src="' + esc(m.logo) + '" alt="' + (copia ? "" : esc(m.nome)) + '" loading="lazy">' : esc(m.nome)) + "</li>";
+    }
+    /* Duas faixas que correm em sentidos opostos; cada faixa repete a lista para o loop não ter emenda */
+    var lista = D.marcas.lista, meio = Math.ceil(lista.length / 2);
+    function faixa(itens, inversa) {
+      var dur = Math.max(28, itens.length * 4);
+      return '<div class="faixa-marcas' + (inversa ? " faixa-marcas--inversa" : "") + '">' +
+        '<ul class="faixa-marcas__trilho" style="animation-duration:' + dur + 's">' +
+          itens.map(function (m) { return cartaoMarca(m, false); }).join("") +
+          itens.map(function (m) { return cartaoMarca(m, true); }).join("") +
+        "</ul></div>";
+    }
+    var marcas = faixa(lista.slice(0, meio), false) + faixa(lista.slice(meio), true);
 
     $("#conteudo").innerHTML =
       /* TOPO */
@@ -309,10 +321,11 @@
       "</div></section>" +
 
       /* MARCAS */
-      '<section class="marcas" id="marcas" aria-labelledby="marcas-titulo"><div class="container marcas__grade">' +
+      '<section class="marcas" id="marcas" aria-labelledby="marcas-titulo"><div class="container">' +
         '<div><p class="rotulo">Marcas</p><h2 class="titulo-p" id="marcas-titulo" style="font-size:clamp(24px,2.4vw,32px)">' + esc(D.marcas.titulo) + '</h2>' + (D.marcas.subtitulo ? '<p style="margin:10px 0 0;font-size:16px">' + esc(D.marcas.subtitulo) + "</p>" : "") + "</div>" +
-        '<ul class="marcas__lista">' + marcas + "</ul>" +
-      "</div></section>" +
+      "</div>" +
+      '<div class="marcas__faixas">' + marcas + "</div>" +
+      "</section>" +
 
       blocoContato();
   }
