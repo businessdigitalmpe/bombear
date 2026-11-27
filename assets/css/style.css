@@ -391,3 +391,14 @@ button { font: inherit; color: inherit; }
   6% { transform: translateY(-10px); }
 }
 .marca img[src$="hth.png"] { max-height: 56px; }
+
+/* ---------- Troca de palavra do topo: letras caem uma a uma ---------- */
+.agua__item { color: var(--marinho); -webkit-text-stroke: 0; }
+.agua__cheia { display: none; }
+.agua__item > .onda-letra { opacity: 0; translate: 0 -0.9em;
+  transition: translate .6s cubic-bezier(.3, 1.45, .5, 1), opacity .3s ease;
+  transition-delay: var(--atraso, 0s); }
+.agua__item.cheio > .onda-letra { opacity: 1; translate: 0 0; }
+.agua__item.esvaziando > .onda-letra { opacity: 0; translate: 0 .7em;
+  transition: translate .35s ease-in, opacity .3s ease-in;
+  transition-delay: calc(var(--atraso, 0s) * .5); }

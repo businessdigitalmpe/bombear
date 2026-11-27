@@ -343,7 +343,7 @@
         if (fotoVelha) { fotoVelha.classList.remove("ativa"); fotoVelha.classList.add("anterior"); }
         if (fotos[i]) fotos[i].classList.add("ativa");
         if (legenda) legenda.textContent = D.hero.palavras[i].palavra;
-      }, 500);
+      }, 700);
     }, 4000);
   }
 
