@@ -370,3 +370,24 @@ button { font: inherit; color: inherit; }
   0%, 16%, 100% { transform: none; border-color: var(--linha); box-shadow: none; }
   7% { transform: translateY(-8px); border-color: var(--destaque); box-shadow: 0 12px 22px -14px rgba(10, 58, 99, .4); }
 }
+
+/* Marcas sem linha em volta; a onda passa a usar só elevação e sombra */
+.marca, .marcas__lista--onda .marca { border: 0; }
+.marcas__lista--onda .marca:hover { transform: translateY(-6px); box-shadow: 0 14px 26px -14px rgba(10, 58, 99, .45); }
+@keyframes ondaMarca {
+  0%, 16%, 100% { transform: none; box-shadow: none; }
+  7% { transform: translateY(-8px); box-shadow: 0 14px 24px -14px rgba(10, 58, 99, .4); }
+}
+
+/* ---------- Topo: a mesma onda passa pelas letras e pela casinha ---------- */
+.onda-letra { display: inline-block; animation: ondaLetra 7s ease-in-out infinite; animation-delay: var(--atraso, 0s); }
+@keyframes ondaLetra {
+  0%, 12%, 100% { transform: none; }
+  5% { transform: translateY(-0.09em); }
+}
+.casa { animation: ondaCasa 7s ease-in-out infinite; animation-delay: .9s; }
+@keyframes ondaCasa {
+  0%, 14%, 100% { transform: none; }
+  6% { transform: translateY(-10px); }
+}
+.marca img[src$="hth.png"] { max-height: 56px; }

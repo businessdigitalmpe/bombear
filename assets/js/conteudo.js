@@ -252,6 +252,11 @@ window.BOMBEAR = {
       { nome: "Paraboni", logo: "assets/img/marcas/paraboni.png" },
       { nome: "Makita", logo: "assets/img/marcas/makita.png" },
       { nome: "Plastmar", logo: "assets/img/marcas/plastmar.png" },
+      { nome: "HTH", logo: "assets/img/marcas/hth.png" },
+      { nome: "Netuno", logo: "assets/img/marcas/netuno.png" },
+      { nome: "ATcllor", logo: "assets/img/marcas/atcllor.png" },
+      { nome: "Motomil", logo: "assets/img/marcas/motomil.png" },
+      { nome: "Branco", logo: "assets/img/marcas/branco.png" },
       { nome: "Thebe", logo: null },
       { nome: "Irritec", logo: null },   { nome: "Fortlev", logo: null }
     ]

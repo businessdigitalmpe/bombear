@@ -253,7 +253,10 @@
     var h = D.hero, q = D.quemSomosResumo;
 
     var palavras = h.palavras.map(function (p, i) {
-      return '<span class="agua__item' + (i === 0 ? " ativa" : "") + '">' + esc(p.palavra) + '<span class="agua__cheia">' + esc(p.palavra) + "</span></span>";
+      var letras = p.palavra.split("").map(function (l, j) {
+        return '<span class="onda-letra" style="--atraso:' + (j * 0.07).toFixed(2) + 's">' + esc(l) + "</span>";
+      }).join("");
+      return '<span class="agua__item' + (i === 0 ? " ativa" : "") + '">' + letras + '<span class="agua__cheia">' + letras + "</span></span>";
     }).join("");
 
     var paineis = D.categorias.map(function (cat, i) {
