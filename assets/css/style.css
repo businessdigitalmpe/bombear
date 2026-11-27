@@ -349,3 +349,4 @@ button { font: inherit; color: inherit; }
 .marcas__lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 130px), 1fr)); gap: 10px; }
 .marca { min-width: 0; padding: 0 14px; text-align: center; }
 .marca img { max-width: 100%; }
+.marcas__lista { grid-template-columns: repeat(auto-fill, minmax(min(100%, 112px), 1fr)); }

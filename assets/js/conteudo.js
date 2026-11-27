@@ -236,11 +236,14 @@ window.BOMBEAR = {
     subtitulo: "Fornecedores homologados, com garantia de fábrica.",
     /* Use logo só com autorização do fabricante. Sem logo, aparece o nome. */
     lista: [
+      { nome: "Schneider Motobombas", logo: "assets/img/marcas/schneider.png" },
+      { nome: "Rain Bird", logo: "assets/img/marcas/rainbird.png" },
+      { nome: "Bombas Leão", logo: "assets/img/marcas/leao.png" },
       { nome: "Famac", logo: "assets/img/marcas/famac.png" },
       { nome: "Intech Machine", logo: "assets/img/marcas/intech.png" },
       { nome: "Lepono", logo: "assets/img/marcas/lepono.png" },
       { nome: "Asperbras", logo: "assets/img/marcas/asperbras.png" },
-      { nome: "Schneider", logo: null }, { nome: "Anauger", logo: null },
+      { nome: "Anauger", logo: null },
       { nome: "Thebe", logo: null },     { nome: "Agropolo", logo: null },
       { nome: "Irritec", logo: null },   { nome: "Fortlev", logo: null }
     ]
