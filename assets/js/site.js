@@ -273,21 +273,12 @@
       return '<li><span class="conexao" aria-hidden="true">' + (i + 1) + '</span><h3 class="titulo-p">' + esc(it.titulo) + "</h3><p>" + esc(it.texto) + "</p></li>";
     }).join("");
 
-    function cartaoMarca(m, copia) {
-      return '<li class="marca"' + (copia ? ' aria-hidden="true"' : "") + ">" +
-        (m.logo ? '<img src="' + esc(m.logo) + '" alt="' + (copia ? "" : esc(m.nome)) + '" loading="lazy">' : esc(m.nome)) + "</li>";
-    }
-    /* Duas faixas que correm em sentidos opostos; cada faixa repete a lista para o loop não ter emenda */
-    var lista = D.marcas.lista, meio = Math.ceil(lista.length / 2);
-    function faixa(itens, inversa) {
-      var dur = Math.max(28, itens.length * 4);
-      return '<div class="faixa-marcas' + (inversa ? " faixa-marcas--inversa" : "") + '">' +
-        '<ul class="faixa-marcas__trilho" style="animation-duration:' + dur + 's">' +
-          itens.map(function (m) { return cartaoMarca(m, false); }).join("") +
-          itens.map(function (m) { return cartaoMarca(m, true); }).join("") +
-        "</ul></div>";
-    }
-    var marcas = faixa(lista.slice(0, meio), false) + faixa(lista.slice(meio), true);
+    /* Grade de marcas com uma onda que atravessa na diagonal (atraso = coluna + linha) */
+    var marcas = D.marcas.lista.map(function (m, i) {
+      var atraso = ((i % 5) + Math.floor(i / 5)) * 0.14;
+      return '<li class="marca" style="--atraso:' + atraso.toFixed(2) + 's">' +
+        (m.logo ? '<img src="' + esc(m.logo) + '" alt="' + esc(m.nome) + '" loading="lazy">' : esc(m.nome)) + "</li>";
+    }).join("");
 
     $("#conteudo").innerHTML =
       /* TOPO */
@@ -324,7 +315,7 @@
       '<section class="marcas" id="marcas" aria-labelledby="marcas-titulo"><div class="container">' +
         '<div><p class="rotulo">Marcas</p><h2 class="titulo-p" id="marcas-titulo" style="font-size:clamp(24px,2.4vw,32px)">' + esc(D.marcas.titulo) + '</h2>' + (D.marcas.subtitulo ? '<p style="margin:10px 0 0;font-size:16px">' + esc(D.marcas.subtitulo) + "</p>" : "") + "</div>" +
       "</div>" +
-      '<div class="marcas__faixas">' + marcas + "</div>" +
+      '<div class="container"><ul class="marcas__lista marcas__lista--onda">' + marcas + "</ul></div>" +
       "</section>" +
 
       blocoContato();
@@ -510,5 +501,12 @@
   ligarHeader();
   ligarHero();
   if (pagina === "inicio") ligarCategorias();
+  (function () {
+    var grade = document.querySelector(".marcas__lista--onda");
+    if (!grade || reduzMovimento || !("IntersectionObserver" in window)) return;
+    new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (en) { grade.classList.toggle("em-onda", en.isIntersecting); });
+    }, { threshold: 0.25 }).observe(grade);
+  })();
   if (pagina === "produtos") ligarProdutos();
 })();
