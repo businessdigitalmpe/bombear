@@ -247,7 +247,12 @@ window.BOMBEAR = {
       { nome: "Belmar Metais", logo: "assets/img/marcas/belmar.png" },
       { nome: "Grupo Lukma", logo: "assets/img/marcas/lukma.png" },
       { nome: "Bombas King", logo: "assets/img/marcas/king.png" },
-      { nome: "Thebe", logo: null },     { nome: "Agropolo", logo: null },
+      { nome: "Agropolo", logo: "assets/img/marcas/agropolo.png" },
+      { nome: "Viqua", logo: "assets/img/marcas/viqua.png" },
+      { nome: "Paraboni", logo: "assets/img/marcas/paraboni.png" },
+      { nome: "Makita", logo: "assets/img/marcas/makita.png" },
+      { nome: "Plastmar", logo: "assets/img/marcas/plastmar.png" },
+      { nome: "Thebe", logo: null },
       { nome: "Irritec", logo: null },   { nome: "Fortlev", logo: null }
     ]
   },
