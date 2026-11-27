@@ -233,7 +233,7 @@ window.BOMBEAR = {
   /* ---------- HOME: MARCAS ---------- */
   marcas: {
     titulo: "Marcas que a gente conhece por dentro",
-    subtitulo: "Fornecedores homologados, com garantia de fábrica.",
+    subtitulo: "",
     /* Use logo só com autorização do fabricante. Sem logo, aparece o nome. */
     lista: [
       { nome: "Schneider Motobombas", logo: "assets/img/marcas/schneider.png" },
@@ -243,7 +243,10 @@ window.BOMBEAR = {
       { nome: "Intech Machine", logo: "assets/img/marcas/intech.png" },
       { nome: "Lepono", logo: "assets/img/marcas/lepono.png" },
       { nome: "Asperbras", logo: "assets/img/marcas/asperbras.png" },
-      { nome: "Anauger", logo: null },
+      { nome: "Anauger", logo: "assets/img/marcas/anauger.png" },
+      { nome: "Belmar Metais", logo: "assets/img/marcas/belmar.png" },
+      { nome: "Grupo Lukma", logo: "assets/img/marcas/lukma.png" },
+      { nome: "Bombas King", logo: "assets/img/marcas/king.png" },
       { nome: "Thebe", logo: null },     { nome: "Agropolo", logo: null },
       { nome: "Irritec", logo: null },   { nome: "Fortlev", logo: null }
     ]

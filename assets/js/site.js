@@ -310,7 +310,7 @@
 
       /* MARCAS */
       '<section class="marcas" id="marcas" aria-labelledby="marcas-titulo"><div class="container marcas__grade">' +
-        '<div><p class="rotulo">Marcas</p><h2 class="titulo-p" id="marcas-titulo" style="font-size:clamp(24px,2.4vw,32px)">' + esc(D.marcas.titulo) + '</h2><p style="margin:10px 0 0;font-size:16px">' + esc(D.marcas.subtitulo) + "</p></div>" +
+        '<div><p class="rotulo">Marcas</p><h2 class="titulo-p" id="marcas-titulo" style="font-size:clamp(24px,2.4vw,32px)">' + esc(D.marcas.titulo) + '</h2>' + (D.marcas.subtitulo ? '<p style="margin:10px 0 0;font-size:16px">' + esc(D.marcas.subtitulo) + "</p>" : "") + "</div>" +
         '<ul class="marcas__lista">' + marcas + "</ul>" +
       "</div></section>" +
 

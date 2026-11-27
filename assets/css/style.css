@@ -350,3 +350,8 @@ button { font: inherit; color: inherit; }
 .marca { min-width: 0; padding: 0 14px; text-align: center; }
 .marca img { max-width: 100%; }
 .marcas__lista { grid-template-columns: repeat(auto-fill, minmax(min(100%, 112px), 1fr)); }
+/* 15 marcas: 5 colunas no computador, 3 no celular (linhas sempre completas) */
+.marcas__lista { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 600px) { .marcas__lista { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+/* Selo redondo da Anauger precisa de mais altura para ser legível */
+.marca img[src$="anauger.png"] { max-height: 62px; }
