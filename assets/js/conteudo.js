@@ -56,7 +56,7 @@ window.BOMBEAR = {
     endereco: "CE-040, 390",
     cidade: "Eusébio",
     uf: "CE",
-    cep: "[CEP]",
+    cep: "61760-000",
     telefone: "(85) 99159-5312",
     whatsapp: "5585991595312",           // só números, com 55 + DDD
     mensagemWhatsapp: "Olá! Vim pelo site da Bombear e quero ajuda com ",
@@ -236,10 +236,13 @@ window.BOMBEAR = {
     subtitulo: "Fornecedores homologados, com garantia de fábrica.",
     /* Use logo só com autorização do fabricante. Sem logo, aparece o nome. */
     lista: [
+      { nome: "Famac", logo: "assets/img/marcas/famac.png" },
+      { nome: "Intech Machine", logo: "assets/img/marcas/intech.png" },
+      { nome: "Lepono", logo: "assets/img/marcas/lepono.png" },
+      { nome: "Asperbras", logo: "assets/img/marcas/asperbras.png" },
       { nome: "Schneider", logo: null }, { nome: "Anauger", logo: null },
       { nome: "Thebe", logo: null },     { nome: "Agropolo", logo: null },
-      { nome: "Irritec", logo: null },   { nome: "Fortlev", logo: null },
-      { nome: "Asperbras", logo: null }, { nome: "Famac", logo: null }
+      { nome: "Irritec", logo: null },   { nome: "Fortlev", logo: null }
     ]
   },
 

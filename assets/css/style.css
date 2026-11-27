@@ -342,3 +342,10 @@ button { font: inherit; color: inherit; }
 /* Logo do WhatsApp dentro dos botões e do rodapé */
 .icone--whats { width: 22px; height: 22px; object-fit: contain; }
 .sociais .icone--whats { width: 24px; height: 24px; }
+
+/* Marcas: cartões de logo e de nome com a mesma altura */
+.marca { min-height: 72px; justify-content: center; min-width: 120px; }
+.marca img { max-height: 40px; max-width: 150px; height: auto; object-fit: contain; }
+.marcas__lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 130px), 1fr)); gap: 10px; }
+.marca { min-width: 0; padding: 0 14px; text-align: center; }
+.marca img { max-width: 100%; }
