@@ -257,8 +257,6 @@ window.BOMBEAR = {
       { nome: "ATcllor", logo: "assets/img/marcas/atcllor.png" },
       { nome: "Motomil", logo: "assets/img/marcas/motomil.png" },
       { nome: "Branco", logo: "assets/img/marcas/branco.png" },
-      { nome: "Thebe", logo: null },
-      { nome: "Irritec", logo: null },   { nome: "Fortlev", logo: null }
     ]
   },
 
