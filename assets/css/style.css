@@ -406,3 +406,7 @@ button { font: inherit; color: inherit; }
 .marcas__lista .marca { flex-basis: calc((100% - 60px) / 7); }
 @media (max-width: 1100px) { .marcas__lista .marca { flex-basis: calc((100% - 30px) / 4); } }
 @media (max-width: 600px) { .marcas__lista .marca { flex-basis: calc((100% - 20px) / 3); } }
+/* 22 marcas: 6 colunas no computador (última linha centralizada) */
+.marcas__lista .marca { flex-basis: calc((100% - 50px) / 6); }
+@media (max-width: 1100px) { .marcas__lista .marca { flex-basis: calc((100% - 30px) / 4); } }
+@media (max-width: 600px) { .marcas__lista .marca { flex-basis: calc((100% - 10px) / 2); } }

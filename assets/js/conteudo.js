@@ -253,6 +253,7 @@ window.BOMBEAR = {
       { nome: "Makita", logo: "assets/img/marcas/makita.png" },
       { nome: "Plastmar", logo: "assets/img/marcas/plastmar.png" },
       { nome: "HTH", logo: "assets/img/marcas/hth.png" },
+      { nome: "Sodramar", logo: "assets/img/marcas/sodramar.png" },
       { nome: "Netuno", logo: "assets/img/marcas/netuno.png" },
       { nome: "ATcllor", logo: "assets/img/marcas/atcllor.png" },
       { nome: "Motomil", logo: "assets/img/marcas/motomil.png" },

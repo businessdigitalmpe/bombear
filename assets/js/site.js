@@ -278,7 +278,7 @@
 
     /* Grade de marcas com uma onda que atravessa na diagonal (atraso = coluna + linha) */
     var marcas = D.marcas.lista.map(function (m, i) {
-      var atraso = ((i % 7) + Math.floor(i / 7)) * 0.12;
+      var atraso = ((i % 6) + Math.floor(i / 6)) * 0.13;
       return '<li class="marca" style="--atraso:' + atraso.toFixed(2) + 's">' +
         (m.logo ? '<img src="' + esc(m.logo) + '" alt="' + esc(m.nome) + '" loading="lazy">' : esc(m.nome)) + "</li>";
     }).join("");
