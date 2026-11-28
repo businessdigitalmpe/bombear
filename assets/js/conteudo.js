@@ -60,7 +60,7 @@ window.BOMBEAR = {
     telefone: "(85) 99159-5312",
     whatsapp: "5585991595312",           // só números, com 55 + DDD
     mensagemWhatsapp: "Olá! Vim pelo site da Bombear e quero ajuda com ",
-    email: "[EMAIL]@[DOMINIO].com.br",
+    email: "faleconosco@bombear.org",
     horarioTexto: "Seg a Sex — 08h00 às 19h00 · Sábado — 08h00 às 16h00",
     /* Horário usado no selo "ABERTO AGORA". 0 = domingo ... 6 = sábado.
        Enquanto horarioConfirmado for false, o selo NÃO aparece
@@ -70,8 +70,8 @@ window.BOMBEAR = {
       1: ["08:00", "19:00"], 2: ["08:00", "19:00"], 3: ["08:00", "19:00"],
       4: ["08:00", "19:00"], 5: ["08:00", "19:00"], 6: ["08:00", "16:00"]
     },
-    instagram: "https://instagram.com/[PERFIL]",
-    facebook: "https://facebook.com/[PAGINA]",
+    instagram: "https://instagram.com/bombear.eusebio",
+    facebook: "",                     // vazio = ícone do Facebook não aparece
     mapaEmbed: "https://www.google.com/maps?q=CE-040,+390,+Eus%C3%A9bio+-+CE&output=embed",
     mapaRota: "https://www.google.com/maps/dir/?api=1&destination=CE-040,+390,+Eus%C3%A9bio+-+CE"
   },

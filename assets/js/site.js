@@ -206,8 +206,8 @@
               "<li>" + ICONES.relogio + "<span>" + esc(c.horarioTexto) + "</span></li>" +
             "</ul>" + seloAberto("Aberto agora") +
             '<div class="sociais">' +
-              '<a href="' + esc(c.instagram) + '" target="_blank" rel="noopener" aria-label="Instagram da Bombear">' + ICONES.insta + "</a>" +
-              '<a href="' + esc(c.facebook) + '" target="_blank" rel="noopener" aria-label="Facebook da Bombear">' + ICONES.face + "</a>" +
+              (c.instagram ? '<a href="' + esc(c.instagram) + '" target="_blank" rel="noopener" aria-label="Instagram da Bombear">' + ICONES.insta + "</a>" : "") +
+              (c.facebook ? '<a href="' + esc(c.facebook) + '" target="_blank" rel="noopener" aria-label="Facebook da Bombear">' + ICONES.face + "</a>" : "") +
               '<a href="' + linkWhats() + '" target="_blank" rel="noopener" aria-label="WhatsApp da Bombear">' + ICONES.whats + "</a>" +
             "</div>" +
           "</div>" +
