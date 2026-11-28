@@ -66,6 +66,22 @@ Depois abra http://localhost:8000.
 Funciona em qualquer hospedagem de site estático (GitHub Pages, Netlify, Hostinger).
 Para o GitHub Pages: Settings → Pages → Branch `main`, pasta `/ (root)` → Save.
 
+### Domínio próprio (bombear.org)
+
+O arquivo `CNAME` na raiz diz ao GitHub Pages que o site responde em **bombear.org**.
+No painel onde o domínio foi registrado, configure o DNS:
+
+| Tipo  | Nome | Valor |
+|-------|------|-------|
+| A     | @    | 185.199.108.153 |
+| A     | @    | 185.199.109.153 |
+| A     | @    | 185.199.110.153 |
+| A     | @    | 185.199.111.153 |
+| CNAME | www  | businessdigitalmpe.github.io |
+
+Atenção: se o e-mail @bombear.org já funciona, **não apague os registros MX** nem os TXT do e-mail.
+Depois que o DNS propagar (de minutos a 24 h): Settings → Pages → marcar **Enforce HTTPS**.
+
 ## Limitação conhecida (SEO)
 
 O conteúdo é montado por JavaScript para que tudo fique em um único arquivo. O Google

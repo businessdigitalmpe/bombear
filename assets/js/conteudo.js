@@ -48,7 +48,7 @@ window.BOMBEAR = {
     simbolo: "assets/img/simbolo-cor.svg",
     simboloNegativo: "assets/img/simbolo-negativo.svg",
     iconeWhatsapp: "assets/img/whatsapp.png", // botão flutuante no canto da tela
-    urlSite: "https://[DOMINIO].com.br"
+    urlSite: "https://bombear.org"
   },
 
   /* ---------- CONTATO ---------- */
